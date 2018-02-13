@@ -1,0 +1,22 @@
+<header>
+  <div (click)="showMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-lg-auto col-md-auto col-sm-auto">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<aside *ngIf="toggleMenu">
+  <p>
+    <a href="/visitors/visitor-list">Visitors List</a>
+  </p>
+  <p>
+    <a href="/visitors/visitor-registration">Register New Visitor</a>
+  </p>
+</aside>

@@ -1,0 +1,11 @@
+header {
+  text-align: center;
+  background-color: teal;
+  color: oldlace;
+  padding: 10px;
+  margin-top: 20px;
+}
+.loginCard {
+  background-color: white;
+  padding: 20px;
+}

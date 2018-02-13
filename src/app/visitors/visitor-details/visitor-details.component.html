@@ -1,0 +1,23 @@
+<h1>Visitors Details</h1>
+<div class="row visitordetails">
+  <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3">
+    <img src="/assets/images/userImg.png">
+  </div>
+
+  <div class="col-lg-9 col-xl-9 col-md-9 col-sm-9">
+    <p>
+      <strong>Visitor Name: </strong>
+      {{visitorsDetails.visitorName ? visitorsDetails.visitorName : 'Pushpendra Sharma'}}
+    </p>
+
+    <p>
+      <strong>Purpose: </strong>
+      {{visitorsDetails.purpose ? visitorsDetails.purpose : 'Interview'}}
+    </p>
+
+    <p>
+      <strong>Contact Person: </strong>
+      {{visitorsDetails.contactPerson ? visitorsDetails.contactPerson : 'Kumar'}}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="alert alert-success registrationMessage" *ngIf="successMessage">
+  {{successMessage}}
+  <a href="/visitors/visitor-list">Check the newly added visitor</a>
+</div>
+<div class="card registrationForm">
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <label for="visitorName">Visitor Name</label>
+        <input type="text" class="form-control" name="visitorName" id="visitorName" [(ngModel)]="newVisitor.visitorName">
+      </div>
+      <div class="form-group">
+        <label for="purpose">Purpose</label>
+        <input type="text" class="form-control" name="purpose" id="purpose" [(ngModel)]="newVisitor.purpose">
+      </div>
+      <div class="form-group">
+        <label for="contactPerson">Contact Person</label>
+        <input type="text" class="form-control" name="contactPerson" id="contactPerson" [(ngModel)]="newVisitor.contactPerson">
+      </div>
+      <button class="btn btn-success btn-block" [disabled]="!newVisitor.visitorName || !newVisitor.purpose || !newVisitor.contactPerson"
+        (click)="registerVisitor()">Register</button>
+    </form>
+  </div>
+</div>

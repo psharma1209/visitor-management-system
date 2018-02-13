@@ -1,0 +1,23 @@
+<input type="search" class="form-control searchInput" [(ngModel)]="searchVisitor" placeholder="Search Visitors">
+<table class="table table-bordered table-hover table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>S.No.</th>
+      <th>Visitor Name</th>
+      <th>Purpose</th>
+      <th>Contact Person</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let visitor of visitorList | visitorSearch : searchVisitor : searchList">
+      <td>{{visitor.sNo}}</td>
+      <td>{{visitor.visitorName}}</td>
+      <td>{{visitor.purpose}}</td>
+      <td>{{visitor.contactPerson}}</td>
+      <td>
+        <a href="javascript:void(0);" (click)="getDetails(visitor.sNo)">view</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

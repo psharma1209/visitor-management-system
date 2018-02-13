@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.visitordetails {
+  margin-top: 40px;
+}
+.visitordetails img {
+  border-radius: 100%;
+  margin-right: 40px;
+}
+
+.visitordetails p {
+  margin-left: 10px;
+}
+
+.visitordetails p strong {
+  margin-right: 5px;
+}
